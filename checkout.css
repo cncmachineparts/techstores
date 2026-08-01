@@ -1,12 +1,7 @@
-/* ===========================
-   GOOGLE FONT
-=========================== */
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* ===========================
-   RESET
-=========================== */
+/* Reset */
 
 *{
     margin:0;
@@ -14,43 +9,90 @@
     box-sizing:border-box;
 }
 
-body{
+html{
+    scroll-behavior:smooth;
+}
 
+body{
     font-family:'Poppins',sans-serif;
     background:#0f172a;
     color:#ffffff;
-
+    overflow-x:hidden;
 }
 
-/* ===========================
-   HEADER
-=========================== */
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#111827;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0ea5e9;
+}
+
+::selection{
+    background:#38bdf8;
+    color:#fff;
+}
+
+/*=========================================
+HEADER
+=========================================*/
 
 header{
 
+    width:100%;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:18px 8%;
 
     background:#111827;
 
-    border-bottom:1px solid #1e293b;
+    position:sticky;
+
+    top:0;
+
+    z-index:999;
+
+    border-bottom:1px solid #1f2937;
 
 }
+
+/* Logo */
 
 .logo{
 
     display:flex;
+
     align-items:center;
+
     gap:12px;
 
 }
 
 .logo img{
 
-    width:50px;
+    width:55px;
+
+    height:55px;
+
+    object-fit:cover;
+
+    border-radius:50%;
 
 }
 
@@ -58,29 +100,81 @@ header{
 
     color:#38bdf8;
 
+    font-size:28px;
+
+    font-weight:700;
+
 }
+
+/*=========================================
+Navigation
+=========================================*/
 
 nav{
 
     display:flex;
-    gap:25px;
+
+    align-items:center;
+
+    gap:18px;
 
 }
 
 nav a{
 
-    text-decoration:none;
     color:white;
+
+    text-decoration:none;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
     transition:.3s;
+
+    font-weight:500;
 
 }
 
 nav a:hover{
 
-    color:#38bdf8;
+    background:#38bdf8;
+
+    color:#111827;
 
 }
 
+#user-status{
+
+    color:#38bdf8;
+
+    font-weight:600;
+
+}
+
+#logout-btn{
+
+    border:none;
+
+    padding:10px 16px;
+
+    border-radius:8px;
+
+    background:#ef4444;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#logout-btn:hover{
+
+    background:#dc2626;
+
+}
 /* ===========================
    MAIN CONTAINER
 =========================== */
@@ -98,6 +192,8 @@ nav a:hover{
     gap:30px;
 
 }
+
+
 
 /* ===========================
    BOXES
@@ -406,23 +502,7 @@ tfoot td{
 
 }
 
-/* ===========================
-   FOOTER
-=========================== */
 
-footer{
-
-    margin-top:40px;
-
-    padding:25px;
-
-    background:#111827;
-
-    text-align:center;
-
-    border-top:1px solid #1e293b;
-
-}
 
 /* ===========================
    MOBILE
@@ -500,3 +580,33 @@ button{
 }
 
 }
+
+/*=========================================
+FOOTER
+=========================================*/
+
+footer{
+    background:#111827;
+    text-align:center;
+    padding:35px;
+    margin-top:60px;
+}
+
+.footer-links{
+    margin-bottom:18px;
+}
+
+.footer-links a{
+    color:#fff;
+    text-decoration:none;
+    margin:0 15px;
+}
+
+.footer-links a:hover{
+    color:#38bdf8;
+}
+
+footer p{
+    color:#cbd5e1;
+}
+
