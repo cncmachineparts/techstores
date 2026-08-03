@@ -1490,92 +1490,109 @@ grid-template-columns:1fr;
     }
 }
 
-/* ==============================
-   MOBILE HAMBURGER MENU
-============================== */
-     .cart-icon{
-        position:absolute;
-        right:60px;
-        top:18px;
-    }
+/* ===========================
+   AMAZON STYLE MOBILE HEADER
+=========================== */
 
-    .cart-icon a{
-        width:42px;
-        height:42px;
-        font-size:24px;
-    }
-
-    .cart-count{
-        top:-4px;
-        right:-4px;
-        min-width:18px;
-        height:18px;
-        font-size:10px;
-    }
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:sticky;
+    top:0;
+    background:#111827;
+    padding:15px 20px;
+    z-index:999;
+}
 
 .menu-toggle{
     display:none;
     background:none;
     border:none;
-    color:#fff;
+    color:white;
     font-size:28px;
     cursor:pointer;
-    z-index:1001;
 }
 
-@media (max-width:768px){
+.cart-icon{
+    position:relative;
+}
 
-    header{
-        position:relative;
-        flex-direction:row;
-        justify-content:space-between;
-        padding:15px 20px;
-    }
+.cart-icon a{
+    color:white;
+    font-size:28px;
+    text-decoration:none;
+}
 
+.cart-count{
+    position:absolute;
+    top:-8px;
+    right:-10px;
+    min-width:20px;
+    height:20px;
+    background:#ef4444;
+    color:#fff;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:11px;
+    font-weight:bold;
+}
 
+/* Mobile */
+
+@media(max-width:768px){
 
     .menu-toggle{
         display:block;
     }
 
-    #nav-menu{
+    .logo{
+        flex:1;
+        justify-content:center;
+    }
+
+    .logo h2{
+        font-size:22px;
+    }
+
+    .logo img{
+        width:40px;
+        height:40px;
+    }
+
+    nav{
         position:fixed;
-        top:0;
-        right:-100%;
-        width:280px;
+        top:70px;
+        left:-100%;
+        width:260px;
         height:100vh;
         background:#111827;
-
         display:flex;
         flex-direction:column;
         align-items:flex-start;
-
-        padding:90px 25px 30px;
-
+        padding:20px;
+        transition:.35s ease;
         gap:5px;
-
-        transition:right .35s ease;
-
-        box-shadow:-5px 0 25px rgba(0,0,0,.35);
-
-        z-index:1000;
+        z-index:998;
     }
 
-    #nav-menu.active{
-        right:0;
+    nav.active{
+        left:0;
     }
 
-    #nav-menu a,
+    nav a,
     #logout-btn{
         width:100%;
-        text-align:left;
         padding:15px;
-        border-radius:10px;
+        text-align:left;
     }
 
-    #nav-menu a:hover{
-        background:#1e293b;
+    .cart-icon a{
+        font-size:26px;
     }
+}
 
 
 
