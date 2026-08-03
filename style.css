@@ -220,35 +220,7 @@ Cart
 }
 
 
-@media (max-width:768px){
 
-    .cart-icon{
-        position:absolute;
-        right:60px;
-        top:18px;
-    }
-
-    .cart-icon a{
-        width:42px;
-        height:42px;
-        font-size:24px;
-    }
-
-    .cart-count{
-        top:-4px;
-        right:-4px;
-        min-width:18px;
-        height:18px;
-        font-size:10px;
-    }
-
-    .menu-toggle{
-        position:absolute;
-        right:15px;
-        top:15px;
-    }
-
-}
 /*=========================================
 Hero
 =========================================*/
@@ -1585,14 +1557,26 @@ grid-template-columns:1fr;
         background:#1e293b;
     }
 
-    .cart-icon{
-        display:none;
+   .cart-icon{
+        position:absolute;
+        right:60px;
+        top:18px;
     }
 
-    .mobile-cart{
-        display:flex;
-        justify-content:space-between;
-        align-items:center;
+    .cart-icon a{
+        width:42px;
+        height:42px;
+        font-size:24px;
     }
+
+    .cart-count{
+        top:-4px;
+        right:-4px;
+        min-width:18px;
+        height:18px;
+        font-size:10px;
+    }
+
+ 
 
 }
