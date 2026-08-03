@@ -1359,19 +1359,9 @@ grid-template-columns:1fr;
 
     nav a,
     #logout-btn{
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-    padding:15px 18px;
-    margin:5px 0;
-    border:none;
-    border-radius:10px;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:500;
-    transition:.3s;
-}
+        width:100%;
+        text-align:center;
+    }
 
     .hero{
         min-height:70vh;
@@ -1594,24 +1584,18 @@ header{
 
     nav a,
     #logout-btn{
-    width:100%;
-    display:flex;
-    align-items:center;
-    justify-content:flex-start;
-    padding:15px 18px;
-    margin:5px 0;
-    border:none;
-    border-radius:10px;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:500;
-    transition:.3s;
+        width:100%;
+        padding:15px;
+        text-align:left;
+    }
+
+    .cart-icon a{
+        font-size:26px;
+    }
 }
-
-
 
 
 
  
 
-}
+
