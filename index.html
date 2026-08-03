@@ -324,11 +324,12 @@ menuBtn.addEventListener("click", () => {
         menuBtn.innerHTML =
         '<i class="fa-solid fa-bars"></i>';
     }
+
 });
 
-document.querySelectorAll("#nav-menu a").forEach(link => {
+document.querySelectorAll("#nav-menu a").forEach(link=>{
 
-    link.addEventListener("click", () => {
+    link.addEventListener("click",()=>{
 
         navMenu.classList.remove("active");
 
