@@ -1356,16 +1356,37 @@ grid-template-columns:1fr;
         font-size:20px;
     }
 
+    .hero{
+        min-height:70vh;
+        padding:80px 20px 40px;
+    }
+
     .hero h1{
-        font-size:24px;
+        font-size:38px;
     }
 
     .hero p{
-        font-size:14px;
+        font-size:16px;
     }
 
-    .filters button{
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .shop-btn,
+    .contact-btn{
         width:100%;
+    }
+
+    .search-box{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .search-box input,
+    .search-box button{
+        width:100%;
+        margin:0;
     }
 
     .card img{
