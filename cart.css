@@ -540,71 +540,6 @@ Hero
 }
 
 
-/* ========================================
-   RESPONSIVE DESIGN
-======================================== */
-
-@media (max-width: 900px) {
-
-    body {
-        padding: 30px 15px;
-    }
-
-    .cart-container {
-        padding: 20px;
-    }
-
-    .cart-table {
-        min-width: 800px;
-    }
-
-    .cart-container {
-        overflow-x: auto;
-    }
-
-}
-
-
-/* ========================================
-   MOBILE
-======================================== */
-
-@media (max-width: 600px) {
-
-    body {
-        padding: 20px 10px;
-    }
-
-    .cart-container {
-        padding: 15px;
-        border-radius: 10px;
-    }
-
-    .cart-container h1 {
-        font-size: 25px;
-        margin-bottom: 20px;
-    }
-
-    .cart-table th {
-        padding: 12px 10px;
-        font-size: 13px;
-    }
-
-    .cart-table td {
-        padding: 12px 10px;
-        font-size: 13px;
-    }
-
-    .cart-table td img {
-        width: 60px;
-        height: 60px;
-    }
-
-    #total {
-        font-size: 18px;
-    }
-
-}
 
 
 /* ========================================
@@ -735,20 +670,102 @@ footer p{
     transform: translateY(-2px);
 }
 
-
 /* ========================================
    MOBILE RESPONSIVE
 ======================================== */
+@media (max-width: 768px) {
 
-@media (max-width: 600px) {
-
-    .coupon-box {
+    /* Header */
+    header {
         flex-direction: column;
+        gap: 15px;
+        padding: 15px;
     }
 
-    #apply-coupon {
-        width: 100%;
+    .logo {
+        justify-content: center;
     }
+
+    .logo h2 {
+        font-size: 22px;
+    }
+
+    nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a,
+    #logout-btn {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    /* Hero */
+
+    .hero {
+        min-height: 60vh;
+        padding: 30px 20px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+        line-height: 1.3;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .hero button {
+        width: 100%;
+        max-width: 300px;
+        font-size: 16px;
+    }
+
+    /* Cart */
+
+    .cart-container {
+        padding: 15px;
+    }
+
+    .cart-container h1 {
+        font-size: 24px;
+    }
+
+    /* Enable horizontal scrolling */
+    .cart-container {
+        overflow-x: auto;
+    }
+
+    .cart-table {
+        min-width: 700px;
+    }
+
+    .cart-table th,
+    .cart-table td {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .cart-table td img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .cart-table td:nth-child(4) button {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    #total {
+        font-size: 18px;
+    }
+
+    /* Buttons */
 
     .cart-buttons {
         flex-direction: column;
@@ -757,5 +774,73 @@ footer p{
     .cart-buttons a {
         width: 100%;
     }
+
+    /* Footer */
+
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links a {
+        margin: 0;
+    }
+
+    footer {
+        padding: 25px 15px;
+    }
+
+    /* Images */
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
 
+
+/* ========================================
+   EXTRA SMALL DEVICES
+======================================== */
+
+@media (max-width: 480px) {
+
+    .logo img {
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo h2 {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+    }
+
+    .cart-table {
+        min-width: 650px;
+    }
+
+    .delivery-info {
+        padding: 12px;
+    }
+
+    .delivery-info p {
+        font-size: 13px;
+    }
+
+    #total {
+        font-size: 17px;
+    }
+}
