@@ -1512,56 +1512,77 @@ grid-template-columns:1fr;
    MOBILE HAMBURGER MENU
 ============================== */
 
+
 .menu-toggle{
     display:none;
     background:none;
     border:none;
     color:#fff;
-    font-size:32px;
+    font-size:28px;
     cursor:pointer;
+    z-index:1001;
 }
 
 @media (max-width:768px){
 
     header{
         position:relative;
+        flex-direction:row;
+        justify-content:space-between;
+        padding:15px 20px;
     }
 
     .menu-toggle{
         display:block;
     }
 
-    nav{
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
+    #nav-menu{
+        position:fixed;
+        top:0;
+        right:-100%;
+        width:280px;
+        height:100vh;
         background:#111827;
+
         display:flex;
         flex-direction:column;
-        align-items:center;
-        gap:0;
+        align-items:flex-start;
 
-        max-height:0;
-        overflow:hidden;
+        padding:90px 25px 30px;
 
-        transition:max-height .4s ease;
-        border-top:1px solid #1f2937;
+        gap:5px;
+
+        transition:right .35s ease;
+
+        box-shadow:-5px 0 25px rgba(0,0,0,.35);
+
+        z-index:1000;
     }
 
-    nav.active{
-        max-height:500px;
+    #nav-menu.active{
+        right:0;
     }
 
-    nav a{
+    #nav-menu a,
+    #logout-btn{
         width:100%;
-        padding:18px;
-        text-align:center;
-        border-bottom:1px solid #1f2937;
+        text-align:left;
+        padding:15px;
+        border-radius:10px;
     }
 
-    nav a:hover{
-        background:#38bdf8;
-        color:#111827;
+    #nav-menu a:hover{
+        background:#1e293b;
     }
+
+    .cart-icon{
+        display:none;
+    }
+
+    .mobile-cart{
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+
 }
