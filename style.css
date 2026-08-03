@@ -1356,37 +1356,62 @@ grid-template-columns:1fr;
         font-size:20px;
     }
 
-    .hero{
-        min-height:70vh;
-        padding:80px 20px 40px;
+   .hero{
+        min-height:100vh;
+        padding-top:140px;   /* Prevents header overlap */
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:40px;
     }
 
     .hero h1{
-        font-size:38px;
+        font-size:34px;
+        line-height:1.2;
+        margin-bottom:15px;
     }
 
     .hero p{
         font-size:16px;
+        margin-bottom:25px;
     }
 
-    .hero-buttons{
-        flex-direction:column;
-    }
-
-    .shop-btn,
-    .contact-btn{
-        width:100%;
+    .hero button{
+        width:auto;
+        min-width:220px;
+        padding:15px 30px;
     }
 
     .search-box{
-        flex-direction:column;
+        display:flex;
+        flex-direction:row;
+        align-items:center;
         gap:10px;
     }
 
-    .search-box input,
+    .search-box input{
+        flex:1;
+        width:auto;
+    }
+
     .search-box button{
-        width:100%;
+        width:55px;
+        height:55px;
+        border-radius:50%;
         margin:0;
+        flex-shrink:0;
+    }
+
+  .filters{
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:12px;
+    }
+
+    .filters button{
+        width:100%;
+        padding:14px;
+        border-radius:12px;
+        font-size:15px;
     }
 
     .card img{
