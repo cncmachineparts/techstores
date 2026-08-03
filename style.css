@@ -1608,57 +1608,7 @@ header{
     transition:.3s;
 }
 
-    /* Login */
 
-#signin-link{
-    background:#2563eb;
-    color:#ffffff;
-    justify-content:center;
-    margin-top:15px;
-}
-
-#signin-link:hover{
-    background:#1d4ed8;
-}
-
-/* Logout */
-
-#logout-btn{
-    background:#ef4444;
-    color:#ffffff;
-    justify-content:center;
-    cursor:pointer;
-}
-
-#logout-btn:hover{
-    background:#dc2626;
-}
-
-/* Admin */
-
-#admin-link{
-    background:#22c55e;
-    color:#ffffff;
-    justify-content:center;
-}
-
-#admin-link:hover{
-    background:#16a34a;
-}
-
-/* User name */
-
-#user-status{
-    display:block;
-    width:100%;
-    padding:15px;
-    margin:10px 0;
-    text-align:center;
-    font-weight:600;
-    color:#38bdf8;
-    border-bottom:1px solid #334155;
-}
-}
 
 
 
