@@ -1514,6 +1514,26 @@ grid-template-columns:1fr;
         padding:15px 20px;
     }
 
+     .cart-icon{
+        position:absolute;
+        right:60px;
+        top:18px;
+    }
+
+    .cart-icon a{
+        width:42px;
+        height:42px;
+        font-size:24px;
+    }
+
+    .cart-count{
+        top:-4px;
+        right:-4px;
+        min-width:18px;
+        height:18px;
+        font-size:10px;
+    }
+
     .menu-toggle{
         display:block;
     }
@@ -1557,25 +1577,7 @@ grid-template-columns:1fr;
         background:#1e293b;
     }
 
-   .cart-icon{
-        position:absolute;
-        right:60px;
-        top:18px;
-    }
 
-    .cart-icon a{
-        width:42px;
-        height:42px;
-        font-size:24px;
-    }
-
-    .cart-count{
-        top:-4px;
-        right:-4px;
-        min-width:18px;
-        height:18px;
-        font-size:10px;
-    }
 
  
 
